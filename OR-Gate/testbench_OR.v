@@ -1,15 +1,14 @@
 
-module andGate_testbench;
+module orGate_testbench;
 wire testY;
 reg testA, testB;
 
-andGate gate1(testA, testB, testY);
+orGate gate1( testA, testB, testY);
 
 initial
 begin
-
 	$monitor(testA, testB, testY);
-
+	
 	testA = 1'b0;
 	testB = 1'b0;
 
