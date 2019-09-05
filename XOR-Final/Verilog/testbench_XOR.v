@@ -24,5 +24,7 @@ begin
 	testA = 1'b1;
 	testB = 1'b1;
 
+	#1;
+
 end
 endmodule

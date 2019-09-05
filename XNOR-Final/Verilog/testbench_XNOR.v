@@ -1,8 +1,8 @@
-module norGate_testbench;
+module xnorGate_testbench;
 wire testY;
 reg testA, testB;
 
-norGate gate1(testA, testB, testY);
+xnorGate gate1(testA, testB, testY);
 
 initial
 begin
