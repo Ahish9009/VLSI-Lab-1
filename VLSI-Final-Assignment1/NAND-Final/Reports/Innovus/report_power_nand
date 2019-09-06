@@ -1,0 +1,88 @@
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2019-Sep-05 13:56:50 (2019-Sep-05 08:26:50 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: nandGate
+*
+*	Liberty Libraries used:
+*	        Worst: lib/90/slow.lib
+*
+*	Power Domain used:
+*		Rail:        VDD 	Voltage:        0.9
+*
+*       Power View : Worst
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.00003105 	   62.1865%
+Total Switching Power:       0.00000959 	   19.2085%
+Total Leakage Power:         0.00000929 	   18.6050%
+Total Power:                 0.00004993
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                             0           0           0           0           0
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                  3.105e-05   9.591e-06   9.289e-06   4.993e-05         100
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                          3.105e-05   9.591e-06   9.289e-06   4.993e-05         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9  3.105e-05   9.591e-06   9.289e-06   4.993e-05         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:                        g4 (NAND2XL): 	 4.993e-05
+* 		Highest Leakage Power:                        g4 (NAND2XL): 	 9.289e-06
+* 		Total Cap: 	1.18404e-15 F
+* 		Total instances in design:     1
+* 		Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=841.88MB/841.88MB)
+

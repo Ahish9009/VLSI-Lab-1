@@ -1,0 +1,128 @@
+
+\documentclass[a4paper,11pt]{report}
+\begin{document}
+\title{VLSI Assignment - 1 Report}
+\author{Ahish Deshpande}
+\date{\today}
+\maketitle
+
+
+\tableofcontents
+\begin{enumerate}
+
+\item Aim
+\item Introduction
+\item Procedure
+\item Result and Discussion
+\item Conclusion
+\item References
+
+\end{enumerate}
+\newpage
+
+\renewcommand\thesection{\arabic{section}}
+\section{Aim}
+The aim of this assignment is to write Verilog code and testbench for the following combinational gates:
+  \begin{center}\textbf{AND, OR, NOR, NAND, XOR, NOT} and \textbf{XNOR}. \end{center}\\\\
+We also want to write Verilog code and test bench for the following compound combinational circuits.
+\begin{enumerate}
+\item \textbf{Y = AB + CD}
+\item \textbf{Y = (ABC + DE).F}
+\item \textbf{Y = ((A+B')(CD+E))'}
+\end{enumerate} \\
+We will also write their truth table and find the:
+\begin{itemize}
+\item RTL Schematics
+\item Area
+\item Power
+\item Timing Diagram
+\end{itemize}
+
+\section{Introduction}
+For this assignment, we will be using \textbf{Xilinx ISE}, and \textbf{Cadence}.
+\\ We will generate the following using Xilinx ISE:
+\begin{itemize}
+\item RTL Schematics
+\item Timing Diagram
+\end{itemize}
+\\ We will generate the following using \textbf{Cadence}:
+\begin{itemize}
+\item Area Report
+\item Power Report
+\item Timing Report
+\item Netlist
+\end{itemize}
+
+\section{Procedure}
+The following procedure will be followed:
+\begin{enumerate}
+\item Write the required Verilog code and testbench using \textbf{Xilinx ISE}
+\item Using the above, generate the RTL Schematics and Timing Diagram in Xilinx
+\item Using the Verilog code already written, use \textbf{Cadence NCLaunch} to generate a Timing Diagram
+\item Next, use \textbf{Cadence Genus} to generate Area, Power and Timing reports of the gates and combinational circuits generated. The netlist will also be generated here
+\item Use the generated netlist with \textbf{Cadence Innovus} to optimize the design. The Timing reports for pre-placement, post-placement, pre-rout and post-rout are then generated along with the Power and Area reports. The optimized netlist is also generated.
+\end{enumerate}
+
+\section{Result \& Discussion}
+
+The attached screenshots show the values for the function for all values of the input(thus generating the required truth table). \\
+Tabulating the values observed in the reports from Genus(without optimization) and Innovus(with optimization): \\
+
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+   \textbf{Design} & \multicolumn{2}{|c|}{\textbf{Genus}} & \multicolumn{2}{|c|}{\textbf{Innovus}} \\
+   \hline
+    & \textbf{Area}\textit{(units)} & \textbf{Power}\textit{(nW)} & \textbf{Area}\textit{(units)} & \textbf{Power}\textit{(nW)} \\
+    \hline
+    AND & 5 & 112.983 &  4.5414  & 90.69  \\
+    \hline
+    OR & 5 & 135.769 & 4.5414 & 135.2 \\
+    \hline
+    NOR & 3 & 92.834 & 3.027 & 89.96 \\
+    \hline
+    NAND & 3 & 69.083 & 3.027 & 49.93\\
+    \hline
+    XOR & 8 & 340.607 & 8.325 & 235.4\\
+    \hline
+    NOT & 2 & 53.174 & 2.270 & 48.51\\
+    \hline
+    XNOR & 8 & 204.259 & 7.569 & 134.3\\
+    \hline
+    F1 & 8 & 218.452 & 7.569 & 169.8\\
+    \hline
+    F2 & 11 & 325.562 & 11.353 & 213.6 \\
+    \hline
+    F3 & 13 & 367.735 & 12.867 & 285.3 \\
+    \hline
+
+\end{tabular} \\
+
+\begin{enumerate}
+\item We observe that the \textbf{power} dissipated by the design is proportional to the \textbf{area/size} of the design. 
+\item We can also observe that the power consumed by the design \textbf{can be significantly reduced} by optimizing the design.
+
+\end{enumerate}
+
+\section{Conclusion}
+
+We can conclude that:
+\begin{itemize}
+\item The required designs were successfully implemented using \textbf{Xilinx ISE} and \textbf{Cadence}
+\item The power dissipated by the circuits is \textbf{proportional} to the size of the design
+\item The power consumption of the design can be significantly reduced by \textbf{optimizing the design} appropriately
+\end{itemize}
+
+\section{References}
+\begin{enumerate}
+\item \textit{www.asic-world.com}
+\item \textit{www.xilinx.com}
+\item \textit{www.cadence.com}
+\item \textit{electronics.stackexchange.com}
+\item \textit{Tutorials and Lab Sessions}
+\end{enumerate}
+
+
+
+
+\end{document}
+
